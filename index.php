@@ -1,7 +1,7 @@
 <?php
     include("conexion.php");
     include("funciones.php");
-    $id=0;
+    $id=1;
     $jugador = obtenerJugador($conexion, $id);
     print_r($jugador);
 ?>
