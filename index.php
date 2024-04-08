@@ -3,7 +3,7 @@
     include("funciones.php");
     $id=1;
     $jugador = obtenerJugador($conexion, $id);
-    print_r($jugador);
+    print_r($jugador);//probando
 ?>
 
 <!DOCTYPE html>
