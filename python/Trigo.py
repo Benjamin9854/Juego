@@ -1,6 +1,6 @@
 # Clase de una planta de trigo para juego de granja.
 from dataclasses import dataclass
-import Juego_de_granja.Planta as Planta
+import Planta as Planta
 
 @dataclass
 class Trigo (Planta):
