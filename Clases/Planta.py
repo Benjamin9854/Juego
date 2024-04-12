@@ -5,16 +5,17 @@ from dataclasses import dataclass
 class Planta:
     id = int
     tipo = str
-    esta_regado = False
-    duracion_regado = 5
+    esta_regado = bool
+    duracion_regado = int
     tiempo_cosecha = int
     tiempo_cosechado = int
-    cosechado = False
+    cosechado = bool
     precio = int
     
     def __init__(self):
         self.id = 0
-        self.tipo = "Planta"
+        self.esta_regado = False
+        self.duracion_regado = 5
         self.tiempo_cosecha = 5
         self.tiempo_cosechado = 0
         self.cosechado = False
