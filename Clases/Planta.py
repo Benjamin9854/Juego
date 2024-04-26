@@ -12,9 +12,9 @@ class Planta:
     cosechado = bool
     precio = int
     
-    def __init__(self):
-        self.id = 0
-        self.esta_regado = False
+    def __init__(self, id: int, esta_regado: bool):
+        self.id = id
+        self.esta_regado = esta_regado
         self.duracion_regado = 5
         self.tiempo_cosecha = 5
         self.tiempo_cosechado = 0
@@ -46,3 +46,5 @@ class Planta:
             return True
         else:
             return False
+#%%
+p1 = Planta()

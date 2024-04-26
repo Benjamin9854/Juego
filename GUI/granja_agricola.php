@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +25,6 @@
 
 
     <!--MENU LATERAL!-->
-    <!--MENU LATERAL!-->
 
     <div class="fixed inset-y-0 right-0 flex flex-col justify-center items-center">
         <button type="button" class="flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-blue-500 dark:focus:text-white">
@@ -36,31 +38,28 @@
         </button>
     </div>
 
+    <!--Planta!-->
 
     <div id="cuadrado"></div>
 
-<script>
-    
-    class Planta {
+    <script>
+
+        class Planta {
             constructor() {
                 this.esta_regado = false;
             }
 
             regar() {
                 this.esta_regado = true;
-                document.getElementById('cuadrado').style.backgroundColor = 'green';
-                // Lógica adicional según sea necesario
             }
 
-            // Otras funciones de la planta
-        }
+        }cuadrado
         const cuadrado = document.getElementById('cuadrado');
-        const miPlanta = new Planta();
-
+        const miPlanta = new Planta();        
         cuadrado.addEventListener('click', () => {
-            // Acción cuando haces click en el cuadrado (por ejemplo, regar la planta)
             miPlanta.regar();
+            document.getElementById('cuadrado').style.backgroundColor = 'green';
         });
-</script>
+    </script>
 </body>
 </html>
