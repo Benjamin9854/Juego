@@ -59,6 +59,6 @@
     </div>
 
     <!-- Tu código JavaScript -->
-    <script src="../Clases/main.js"></script>
+    <script src="../JS/Funciones/Jardin.js"></script>
 </body>
 </html>
