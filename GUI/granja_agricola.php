@@ -6,29 +6,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Granja agricola</title>
-<<<<<<< HEAD
-=======
-    <style>
-        #cuadrado {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            position: absolute;
-
-            top: 570px;
-            left: 1000px;
-        }
-        #cuadrado2 {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            position: absolute;
-
-            top: 870px;
-            left: 800px;
-        }
-    </style>
->>>>>>> d959d31c9eb464cfeb3fa181b84c52057c26be06
 </head>
 <body>
     <div class="absolute -z-100 inset-0 bg-no-repeat bg-[url('Imagenes/G_agricola.png')] bg-cover"></div>
@@ -36,7 +13,6 @@
 
     <!--MENU LATERAL!-->
     <!--MENU LATERAL!-->
-
     <div class="flex flex-col fixed top-0 right-0 mt-5 mr-3">
         <button type="button" class="flex items-center px-4 py-2 bg-white border border-gray-200 rounded-t-xl hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-black dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-black dark:focus:text-white">
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-logout"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" /><path d="M9 12h12l-3 -3" /><path d="M18 15l3 -3" /></svg>
@@ -56,7 +32,6 @@
     </div>
 
 
-<<<<<<< HEAD
     <!-- Contenedor de cuadrados -->
     <div id="contenedor-cuadrados">
         <div id="cuadrado1"></div>
@@ -64,39 +39,5 @@
 
     <!-- Tu código JavaScript -->
     <script src="../Clases/main.js"></script>
-=======
-    <div id="cuadrado"></div>
-    <div id="cuadrado2"></div>
-
-<script>
-    
-    class Planta {
-            constructor() {
-                this.esta_regado = false;
-            }
-
-            regar() {
-                this.esta_regado = true;
-                document.getElementById('cuadrado').style.backgroundColor = 'green';
-                // Lógica adicional según sea necesario
-            }
-
-            // Otras funciones de la planta
-        }
-        const cuadrado = document.getElementById('cuadrado');
-        const miPlanta = new Planta();
-        const cuadrado2 = document.getElementById('cuadrado2');
-        const miPlanta2 = new Planta();
-
-        cuadrado.addEventListener('click', () => {
-            // Acción cuando haces click en el cuadrado (por ejemplo, regar la planta)
-            miPlanta.regar();
-        });
-        cuadrado2.addEventListener('click', () => {
-            // Acción cuando haces click en el cuadrado (por ejemplo, regar la planta)
-            miPlanta2.regar();
-        });
-</script>
->>>>>>> d959d31c9eb464cfeb3fa181b84c52057c26be06
 </body>
 </html>

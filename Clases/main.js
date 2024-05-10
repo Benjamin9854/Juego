@@ -1,9 +1,11 @@
 const cuadrado1 = document.getElementById('cuadrado1');
+
+
 // const Planta = require('./Planta')
 // // Crear un arreglo de 30 objetos plantas
-// const arregloPlantas = [];
+// const Jardin = [];
 // for (let i = 0; i < 30; i++) {
-//     arregloPlantas.push(new Planta());
+//     Jardin.push(new Planta());
 // }
 
 cuadrado1.addEventListener('click', () => {
