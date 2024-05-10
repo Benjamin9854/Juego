@@ -1,0 +1,12 @@
+#contenedor-cuadrados {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre los cuadrados */
+    z-index: 110;
+}
+#cuadrado1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    z-index: 120; /* Asegura que los cuadrados estén por encima de otros elementos */
+}
