@@ -35,6 +35,27 @@
     <!-- Contenedor de cuadrados -->
     <div id="contenedor-cuadrados">
         <div id="cuadrado1"></div>
+        <div id="cuadrado2"></div>
+        <div id="cuadrado3"></div>
+        <div id="cuadrado4"></div>
+        <div id="cuadrado5"></div>
+        <div id="cuadrado6"></div>
+        <div id="cuadrado7"></div>
+        <div id="cuadrado8"></div>
+        <div id="cuadrado9"></div>
+        <div id="cuadrado10"></div>
+        <div id="cuadrado11"></div>
+        <div id="cuadrado12"></div>
+        <div id="cuadrado13"></div>
+        <div id="cuadrado14"></div>
+        <div id="cuadrado15"></div>
+        <div id="cuadrado16"></div>
+        <div id="cuadrado17"></div>
+        <div id="cuadrado18"></div>
+        <div id="cuadrado19"></div>
+        <div id="cuadrado20"></div>
+        <div id="cuadrado21"></div>
+        <div id="cuadrado22"></div>
     </div>
 
     <!-- Tu código JavaScript -->
