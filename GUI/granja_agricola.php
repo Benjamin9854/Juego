@@ -11,6 +11,21 @@
     <div class="absolute -z-100 inset-0 bg-no-repeat bg-[url('Imagenes/G_agricola.png')] bg-cover"></div>
 
 
+    <!--INFORMACION JUGADOR!-->
+    <!--INFORMACION JUGADOR!-->
+    <div class="flex flex-col absolute inset-0 z-10 text-2xl p-4 rounded shadow-lg">
+        <?php 
+            include_once("../DataBase/funciones_jugador.php"); 
+            $nombre = obtenerNombre();
+            $dinero = obtenerDinero();
+        ?>
+        <div class="jugador-info">
+            <p><strong>Nombre:</strong> <?php echo htmlspecialchars($nombre); ?></p>
+            <p><strong>Dinero:</strong> <?php echo htmlspecialchars($dinero); ?></p>
+        </div>
+    </div>
+
+
     <!--MENU LATERAL!-->
     <!--MENU LATERAL!-->
     <div class="flex flex-col fixed top-0 right-0 mt-5 mr-3">
@@ -34,31 +49,31 @@
 
     <!-- Contenedor de cuadrados -->
     <div id="contenedor-cuadrados">
-        <div id="cuadrado1"></div>
-        <div id="cuadrado2"></div>
-        <div id="cuadrado3"></div>
-        <div id="cuadrado4"></div>
-        <div id="cuadrado5"></div>
-        <div id="cuadrado6"></div>
-        <div id="cuadrado7"></div>
-        <div id="cuadrado8"></div>
-        <div id="cuadrado9"></div>
-        <div id="cuadrado10"></div>
-        <div id="cuadrado11"></div>
-        <div id="cuadrado12"></div>
-        <div id="cuadrado13"></div>
-        <div id="cuadrado14"></div>
-        <div id="cuadrado15"></div>
-        <div id="cuadrado16"></div>
-        <div id="cuadrado17"></div>
-        <div id="cuadrado18"></div>
-        <div id="cuadrado19"></div>
-        <div id="cuadrado20"></div>
-        <div id="cuadrado21"></div>
-        <div id="cuadrado22"></div>
+        <div id="cuadrado1" class="cuadrado"></div>
+        <div id="cuadrado2" class="cuadrado"></div>
+        <div id="cuadrado3" class="cuadrado"></div>
+        <div id="cuadrado4" class="cuadrado"></div>
+        <div id="cuadrado5" class="cuadrado"></div>
+        <div id="cuadrado6" class="cuadrado"></div>
+        <div id="cuadrado7" class="cuadrado"></div>
+        <div id="cuadrado8" class="cuadrado"></div>
+        <div id="cuadrado9" class="cuadrado"></div>
+        <div id="cuadrado10" class="cuadrado"></div>
+        <div id="cuadrado11" class="cuadrado"></div>
+        <div id="cuadrado12" class="cuadrado"></div>
+        <div id="cuadrado13" class="cuadrado"></div>
+        <div id="cuadrado14" class="cuadrado"></div>
+        <div id="cuadrado15" class="cuadrado"></div>
+        <div id="cuadrado16" class="cuadrado"></div>
+        <div id="cuadrado17" class="cuadrado"></div>
+        <div id="cuadrado18" class="cuadrado"></div>
+        <div id="cuadrado19" class="cuadrado"></div>
+        <div id="cuadrado20" class="cuadrado"></div>
+        <div id="cuadrado21" class="cuadrado"></div>
+        <div id="cuadrado22" class="cuadrado"></div>
     </div>
 
-    <!-- Tu código JavaScript -->
-    <script src="../JS/Funciones/Jardin.js"></script>
+    <!-- Código JavaScript para el jardin-->
+    <script src="../JS/Funciones/Regar.js"></script>
 </body>
 </html>
