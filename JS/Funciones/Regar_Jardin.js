@@ -23,7 +23,7 @@ const cuadrado22 = document.getElementById('cuadrado22');
 
 
 // Importar la clase Planta
-const Planta = require('./Planta');
+const Planta = require('./../Clases/Planta');
 
 // Crear un arreglo de 30 objetos Planta
 const Jardin = [];
