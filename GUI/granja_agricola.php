@@ -74,6 +74,6 @@
     </div>
 
     <!-- Código JavaScript para el jardin-->
-    <script src="../JS/Funciones/Regar.js"></script>
+    <script src="../JS/Funciones/Regar_Jardin.js"></script>
 </body>
 </html>
