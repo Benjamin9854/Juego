@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 08-04-2024 a las 17:29:26
+-- Tiempo de generación: 16-05-2024 a las 22:03:58
 -- Versión del servidor: 8.2.0
 -- Versión de PHP: 8.2.13
 
@@ -24,80 +24,23 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `animal`
---
-
-DROP TABLE IF EXISTS `animal`;
-CREATE TABLE IF NOT EXISTS `animal` (
-  `id_animal` int NOT NULL AUTO_INCREMENT,
-  `tipo_animal` varchar(100) COLLATE utf8mb4_spanish2_ci NOT NULL,
-  `valor_animal` int NOT NULL,
-  PRIMARY KEY (`id_animal`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `edificio`
---
-
-DROP TABLE IF EXISTS `edificio`;
-CREATE TABLE IF NOT EXISTS `edificio` (
-  `id_edificio` int NOT NULL AUTO_INCREMENT,
-  `tipo_edificio` varchar(100) COLLATE utf8mb4_spanish2_ci NOT NULL,
-  `valor_edificio` int NOT NULL,
-  PRIMARY KEY (`id_edificio`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
-
--- --------------------------------------------------------
-
---
 -- Estructura de tabla para la tabla `jugador`
 --
 
 DROP TABLE IF EXISTS `jugador`;
 CREATE TABLE IF NOT EXISTS `jugador` (
-  `id_jugador` int NOT NULL AUTO_INCREMENT,
-  `nombre_jugador` varchar(100) COLLATE utf8mb4_spanish2_ci NOT NULL,
-  `dinero_jugador` int NOT NULL,
-  PRIMARY KEY (`id_jugador`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `dinero` int NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
 
 --
 -- Volcado de datos para la tabla `jugador`
 --
 
-INSERT INTO `jugador` (`id_jugador`, `nombre_jugador`, `dinero_jugador`) VALUES
-(1, 'Benjamin', 1000),
-(2, 'Benjamin', 1000);
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `parcela`
---
-
-DROP TABLE IF EXISTS `parcela`;
-CREATE TABLE IF NOT EXISTS `parcela` (
-  `id_parcela` int NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`id_parcela`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `planta`
---
-
-DROP TABLE IF EXISTS `planta`;
-CREATE TABLE IF NOT EXISTS `planta` (
-  `id_planta` int NOT NULL AUTO_INCREMENT,
-  `tipo_planta` varchar(100) COLLATE utf8mb4_spanish2_ci NOT NULL,
-  `crecimiento_planta` int NOT NULL,
-  `tiempo_cosecha` int NOT NULL,
-  `tiempo_cosechado` int NOT NULL,
-  PRIMARY KEY (`id_planta`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+INSERT INTO `jugador` (`id`, `nombre`, `dinero`) VALUES
+(3, 'Benjamin', 1000);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
